@@ -19,10 +19,8 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 function findBy(array, findFn) {
-  debug
-  let r = findFn()
   for(let i of array) {
-    if (i === r) {
+    if (findFn(i)) {
       return i
     }
   }
