@@ -20,9 +20,9 @@ function keepGoing(array, changeValue, skipValue) {
 
 function findBy(array, findFn) {
   let r = findFn()
-  for(let (i, idx) of array) {
+  for(let i of array) {
     if (i === r) {
-      return idx
+      return i
     }
   }
   return null
